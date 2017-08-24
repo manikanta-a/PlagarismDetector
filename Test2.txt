@@ -1,0 +1,2 @@
+the jdk includes tools useful for developing and testing programs written in the java programming language and running on the java platform.
+manikanta is studying in @ msit

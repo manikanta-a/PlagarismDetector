@@ -1,0 +1,7 @@
+git add . (add folders in repository)
+
+git commit-m "any msg"
+
+git .push origin master
+
+git status

@@ -1,0 +1,16 @@
+Lexical changes are those which could  in principle  be performed by a sophisticated
+text editor  They do not require knowledge of the language sufficient
+to parse a program  Typical approaches are e g  rewording  adding or removing
+comments  changing the formatting  and modifying identifier names 
+A structural change requires the sort of knowledge of a program that would
+be necessary to parse it  It is highly language dependent  Some examples are
+replacing loops  e g  while  do to repeat  until or to for or vice versa  
+nested if statements can be replaced by case or switch statements  in some
+case the order of some statements can be changed without affecting the meaning
+of the program  calls to subroutines may be inlined  and ordering of operands
+may be changed  e g  x   y may become y   x   Our current solution do not
+handle structural changes 
+Many of these techniques can be circumvented by simply removing all comments
+and white spaces and tokenizing the program source  The tokenizing process
+may e g  replace all identifier names with a single token  This simple method
+have proved to be very effective in practice  10  7  
